@@ -1,0 +1,103 @@
+/* style.css – how the page looks. Colours are written as #rrggbb. */
+
+/* The whole page: light blue background, friendly font. */
+body {
+  background-color: #e3f2fd;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #102a43;
+
+  /* Keep everything in a narrow strip in the middle of the screen,
+     so it is easy to read on a phone as well as a laptop. */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0d47a1;
+}
+
+h2 {
+  color: #0d47a1;
+  margin-top: 30px;
+}
+
+/* The form sits in a white box with rounded corners. */
+form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Labels go on their own line, in bold, with a little space above. */
+label,
+.label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+/* The two radio buttons stay on one line with their words. */
+label.radio {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+/* Text boxes stretch the full width of the white box. */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #b0bec5;
+  border-radius: 5px;
+
+  /* Without this, the padding above would make the box wider than the form. */
+  box-sizing: border-box;
+}
+
+/* The green Save button, and the Refresh button below the table. */
+button {
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+/* The message under the Save button. Its colour is set by script.js. */
+#message {
+  font-weight: bold;
+}
+
+/* The table of saved people. */
+table {
+  width: 100%;
+  background-color: #ffffff;
+
+  /* Makes the cell borders join into single lines instead of doubling up. */
+  border-collapse: collapse;
+}
+
+/* Every cell gets a border and a bit of breathing room. */
+th,
+td {
+  border: 1px solid #b0bec5;
+  padding: 8px;
+  text-align: left;
+}
+
+/* The heading row: dark blue with white writing. */
+th {
+  background-color: #0d47a1;
+  color: #ffffff;
+}
