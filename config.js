@@ -10,5 +10,5 @@
 // This key is safe to put on the internet. It is meant to be public, and the
 // database protects itself with the rules in migrations/001 instead.
 
-const SUPABASE_URL = "https://YOUR-PROJECT-ID.supabase.co";
-const SUPABASE_KEY = "YOUR-PUBLISHABLE-OR-ANON-KEY";
+const SUPABASE_URL = "https://usixblcygikoliauowhn.supabase.co";
+const SUPABASE_KEY = "sb_publishable_Sd6dPyrQRh87aaO4JMKCIg_-OeAZteC";
