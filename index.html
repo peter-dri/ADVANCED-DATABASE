@@ -10,7 +10,6 @@
 
   <h1>My School Register</h1>
 
-  <!-- The form. Filling it in and pressing Save adds one row to the database. -->
   <form id="myForm">
 
     <p class="label">I am a</p>
@@ -38,30 +37,6 @@
     <!-- Messages appear here: green if it worked, red if it did not. -->
     <p id="message"></p>
   </form>
-
-  <h2>Saved People</h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Role</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Course / Dept</th>
-      </tr>
-    </thead>
-    <!-- JavaScript puts the rows from the database in here. -->
-    <tbody id="list"></tbody>
-  </table>
-
-  <button id="refresh">Refresh</button>
-
-  <!-- The scripts must stay in this order:
-       1. the Supabase library, so the word "supabase" exists
-       2. config.js, so our URL and key exist
-       3. script.js, which uses all of the above -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config.js"></script>
   <script src="script.js"></script>
